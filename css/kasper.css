@@ -296,6 +296,8 @@ header nav .form i {
   z-index: 5;
   border-radius: 50%;
   opacity: 0.5;
+  transition: 0.5s linear;
+  display: none;
 }
 .landing a:hover {
   opacity: 1;
@@ -428,6 +430,8 @@ header nav .form i {
   text-transform: uppercase;
   padding: 10px 30px;
   border-radius: 20%;
+  cursor: pointer;
+  user-select: none;
 }
 .portfolio .container .shuffle li:hover {
   background-color: var(--main-color);
@@ -438,8 +442,10 @@ header nav .form i {
   color: white;
 }
 .portfolio .images-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* gap: 15px; */
+  margin: 0 15px;
 }
 .portfolio .images-container .box {
   position: relative;
@@ -448,24 +454,28 @@ header nav .form i {
 .portfolio .images-container .box:hover .caption {
   bottom: 0;
 }
+.portfolio .images-container .box img {
+  width: 300px;
+}
 .portfolio .images-container .box:hover img {
   transform: rotate(2deg) scale(1.1);
 }
 @media (max-width: 767px) {
+  .portfolio .images-container {
+    gap: 10px;
+  }
   .portfolio .images-container .box {
-    flex-basis: 100%;
-    margin: 20px;
+    margin: auto;
   }
 }
 @media (min-width: 768px) {
   .portfolio .images-container .box {
-    flex-basis: calc(50% - 40px);
     margin: 10px;
   }
 }
 @media (min-width: 1199px) {
   .portfolio .images-container .box {
-    flex-basis: calc(25% - 40px);
+    /* flex-basis: calc(25% - 40px); */
     margin: 20px;
   }
 }
@@ -749,17 +759,18 @@ header nav .form i {
 .skills .our-skills .prog-holder .prog span {
   background-color: var(--main-color);
   display: block;
-  width: 90%;
+  width: 0;
   height: 100%;
   position: relative;
   border-radius: 10px;
+  transition: 0.5s linear;
 }
 .skills .our-skills .prog-holder .prog span::before {
   content: attr(data-progress);
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  top: -40px;
+  top: 29px;
   right: -12px;
   padding: 4px 0;
   width: 40px;
@@ -771,9 +782,9 @@ header nav .form i {
   position: absolute;
   border-style: solid;
   border-width: 8px;
-  border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
-  right: -2px;
-  top: -14px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.6) transparent;
+  right: 1px;
+  top: 13px;
 }
 /* End Skills */
 /* Start Quote */
@@ -813,6 +824,7 @@ header nav .form i {
   bottom: 10px;
   padding-right: 10px;
   margin-left: -21px;
+  color: #00e3ffcf;
 }
 .quote q::after {
   content: "\f10e";
@@ -821,6 +833,7 @@ header nav .form i {
   position: relative;
   top: 10px;
   padding-left: 10px;
+  color: #00e3ffcf;
 }
 .quote span {
   font-size: var(--p-font-size);
@@ -1093,7 +1106,7 @@ header nav .form i {
 }
 .footer img {
   margin: 0 0 20px 0;
-  width: 200px;
+  width: 150px;
 }
 .footer .container {
   position: relative;

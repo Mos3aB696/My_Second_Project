@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template Css File -->
     <link rel="stylesheet" href="css/kasper.css" />
+    <link rel="shortcut icon" href="image/logoo.png" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,7 +70,7 @@
         <li></li>
       </ul>
       <a href="#" class="up">
-        <i class="fas fa-angle-up  fa-2x scroll-up"></i>
+        <i class="fas fa-angle-up fa-2x scroll-up"></i>
       </a>
     </div>
     <!-- End Landing -->
@@ -159,65 +160,65 @@
           </p>
         </div>
         <ul class="shuffle">
-          <li class="active">All</li>
-          <li>App</li>
-          <li>Photo</li>
-          <li>Web</li>
-          <li>Print</li>
+          <li class="active" data-cat=".all">All</li>
+          <li data-cat=".app">App</li>
+          <li data-cat=".photo">Photo</li>
+          <li data-cat=".web">Web</li>
+          <li data-cat=".print">Print</li>
         </ul>
       </div>
       <div class="images-container">
-        <div class="box">
-          <img src="image/portfolio1.jpg" alt="" />
+        <div class="box app">
+          <img class="all" src="image/portfolio1.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio2.jpg" alt="" />
+        <div class="box app">
+          <img class="all" src="image/portfolio2.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio3.jpg" alt="" />
+        <div class="box print">
+          <img class="all" src="image/portfolio3.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio4 .jpg" alt="" />
+        <div class="box print">
+          <img class="all" src="image/portfolio4 .jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio5.jpg" alt="" />
+        <div class="box web">
+          <img class="all" src="image/portfolio5.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio6.jpg" alt="" />
+        <div class="box web">
+          <img class="all" src="image/portfolio6.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio7.jpg" alt="" />
+        <div class="box photo">
+          <img class="all" src="image/portfolio7.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="image/portfolio8.jpg" alt="" />
+        <div class="box photo">
+          <img class="all" src="image/portfolio8.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
@@ -260,22 +261,22 @@
       <div class="container">
         <div class="box">
           <i class="fas fa-mug-hot"></i>
-          <div class="number">1,263</div>
+          <div class="number" data-num="263">0</div>
           <p>Coffee Drinks</p>
         </div>
         <div class="box">
           <i class="far fa-folder"></i>
-          <div class="number">256</div>
+          <div class="number" data-num="256">0</div>
           <p>Completed Projects</p>
         </div>
         <div class="box">
           <i class="far fa-envelope"></i>
-          <div class="number">1,743</div>
+          <div class="number" data-num="143">0</div>
           <p>Mail Sent</p>
         </div>
         <div class="box">
           <i class="fas fa-trophy"></i>
-          <div class="number">17</div>
+          <div class="number" data-num="17">0</div>
           <p>Awards Receibed</p>
         </div>
       </div>
@@ -321,25 +322,25 @@
           <div class="prog-holder">
             <h4>Adobe</h4>
             <div class="prog">
-              <span style="width: 90%" data-progress="90%"></span>
+              <span data-progress="90%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>Html &amp; Css</h4>
             <div class="prog">
-              <span style="width: 95%" data-progress="95%"></span>
+              <span data-progress="95%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>Javascript</h4>
             <div class="prog">
-              <span style="width: 80%" data-progress="80%"></span>
+              <span data-progress="80%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>Php</h4>
             <div class="prog">
-              <span style="width: 75%" data-progress="75%"></span>
+              <span data-progress="75%"></span>
             </div>
           </div>
         </div>
@@ -508,11 +509,11 @@
           <i class="fas fa-home"></i>
           <i class="fab fa-linkedin"></i>
         </div>
-        <p class="copyright">
-          &copy; 2022 <span>Mos3aB</span> All Right Reserved
-        </p>
+        <p class="copyright">Made With ❤️ By <span>Mos3aB</span></p>
       </div>
     </div>
     <!-- End Footer -->
+    <!-- Js File -->
+    <script src="index.js"></script>
   </body>
 </html>
